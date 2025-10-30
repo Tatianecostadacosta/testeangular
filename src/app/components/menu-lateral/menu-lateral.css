@@ -1,0 +1,56 @@
+/* ------- MENU LATERAL ------- */
+.menu-lateral {
+  background-color: #4527a0; /* Roxo escuro */
+  width: 250px;
+  min-height: 100vh;
+  color: #fff;
+  padding: 40px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título do menu */
+.menu-lateral h3 {
+  font-size: 2rem; /* tamanho maior */
+  font-weight: 800; /* bem destacado */
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase; /* tudo em maiúsculo */
+}
+
+/* Lista */
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-lateral li {
+  margin: 18px 0;
+  text-align: center;
+}
+
+/* Links */
+.menu-lateral a {
+  color: #e0d7f8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem; /* aumentei a visibilidade */
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.menu-lateral a:hover {
+  background-color: #5e35b1; /* roxo médio */
+  color: #fff;
+  transform: scale(1.07);
+}
