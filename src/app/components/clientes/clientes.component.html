@@ -1,0 +1,80 @@
+<!-- ===== FAIXA DE TÍTULO ===== -->
+<div class="titulo-formulario">
+  <h2>CADASTRO DE CLIENTES</h2>
+</div>
+
+<!-- ===== FORMULÁRIO ===== -->
+<div class="container-form">
+  <form (ngSubmit)="cadastrar()" #formCliente="ngForm">
+    <!-- NOME -->
+    <div class="form-group full">
+      <label>Nome:</label>
+      <input type="text" placeholder="Digite o nome completo" [(ngModel)]="nome" name="nome" />
+    </div>
+
+    <!-- ENDEREÇO + Nº -->
+    <div class="form-group grande">
+      <label>Endereço:</label>
+      <input type="text" placeholder="Rua, avenida..." [(ngModel)]="endereco" name="endereco" />
+    </div>
+
+    <div class="form-group pequeno">
+      <label>Nº:</label>
+      <input type="text" placeholder="Número" [(ngModel)]="numero" name="numero" />
+    </div>
+
+    <!-- BAIRRO + CIDADE + CEP -->
+    <div class="form-group medio">
+      <label>Bairro:</label>
+      <input type="text" placeholder="Bairro" [(ngModel)]="bairro" name="bairro" />
+    </div>
+
+    <div class="form-group medio">
+      <label>Cidade:</label>
+      <input type="text" placeholder="Cidade" [(ngModel)]="cidade" name="cidade" />
+    </div>
+
+    <div class="form-group pequeno">
+      <label>CEP:</label>
+      <input type="text" placeholder="00000-000" [(ngModel)]="cep" name="cep" />
+    </div>
+
+    <!-- CPF + IDENTIDADE -->
+    <div class="form-group medio">
+      <label>CPF:</label>
+      <input type="text" placeholder="000.000.000-00" [(ngModel)]="cpf" name="cpf" />
+    </div>
+
+    <div class="form-group medio">
+      <label>Identidade:</label>
+      <input type="text" placeholder="000000000-00" [(ngModel)]="identidade" name="identidade" />
+    </div>
+
+    <!-- TELEFONE + EMAIL -->
+    <div class="form-group medio">
+      <label>Telefone:</label>
+      <input type="text" placeholder="(99) 99999-9999" [(ngModel)]="telefone" name="telefone" />
+    </div>
+
+    <div class="form-group medio">
+      <label>E-mail:</label>
+      <input type="email" placeholder="exemplo@email.com" [(ngModel)]="email" name="email" />
+    </div>
+
+    <!-- ESTADO CIVIL -->
+    <div class="form-group full estado-civil">
+      <label>Estado Civil:</label>
+      <div class="opcoes-estado">
+        <label><input type="radio" [(ngModel)]="estadoCivil" name="estadoCivil" value="Casado(a)" /> Casado(a)</label>
+        <label><input type="radio" [(ngModel)]="estadoCivil" name="estadoCivil" value="Solteiro(a)" /> Solteiro(a)</label>
+        <label><input type="radio" [(ngModel)]="estadoCivil" name="estadoCivil" value="Divorciado(a)" /> Divorciado(a)</label>
+        <label><input type="radio" [(ngModel)]="estadoCivil" name="estadoCivil" value="Viúvo(a)" /> Viúvo(a)</label>
+      </div>
+    </div>
+
+    <!-- BOTÃO -->
+    <div class="botoes">
+      <button type="submit">Cadastrar</button>
+    </div>
+  </form>
+</div>

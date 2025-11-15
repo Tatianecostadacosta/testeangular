@@ -1,4 +1,63 @@
-.content {
-  margin-left: 240px;
+/* ===== MENU LATERAL ===== */
+.menu-lateral {
+  background-color: #3b1790;
+  width: 250px;
+  min-height: 100vh;
+  color: #fff;
   padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.4); /* 🔹 sombra mais forte */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  border-right: 6px solid #fff; /* 🔹 linha branca visível entre menu e conteúdo */
+}
+
+/* ===== FAIXA ROXA DO TÍTULO ===== */
+.titulo-conteudo {
+  position: fixed;
+  top: 0;
+  left: 200px; /* 🔹 afastou 15px do menu lateral */
+  width: calc(100% - 200px); /* ajusta automaticamente a largura */
+  height: 70px;
+  background-color: #4b0082;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #360061;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudo-principal {
+  margin-left: 200px; /* mantém a mesma distância da faixa roxa */
+  margin-top: 70px;
+  background-color: #fff;
+  padding: 40px;
+  min-height: calc(100vh - 70px);
+}
+
+/* ===== RESET GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #fff;
 }

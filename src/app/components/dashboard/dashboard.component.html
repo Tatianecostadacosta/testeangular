@@ -1,0 +1,28 @@
+<div class="titulo-conteudo">
+  <h2>MENU PRINCIPAL</h2>
+</div>
+
+<div class="conteudo-principal">
+  <!-- ===== CARDS DE RESUMO ===== -->
+  <div class="cards-resumo">
+    <div class="card-resumo clientes">
+      <h3>Clientes</h3>
+      <p>{{ dados[0].valor }}</p>
+    </div>
+    <div class="card-resumo produtos">
+      <h3>Produtos</h3>
+      <p>{{ dados[1].valor }}</p>
+    </div>
+    <div class="card-resumo estoque">
+      <h3>Estoque</h3>
+      <p>{{ dados[2].valor }}</p>
+    </div>
+    <div class="card-resumo fornecedores">
+      <h3>Fornecedores</h3>
+      <p>{{ dados[3].valor }}</p>
+    </div>
+  </div>
+
+  <!-- ===== GRÁFICO ===== -->
+  <canvas id="meuGrafico"></canvas>
+</div>

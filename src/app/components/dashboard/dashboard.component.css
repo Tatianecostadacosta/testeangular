@@ -1,0 +1,91 @@
+/* ===== BODY ===== */
+body {
+  background-color: #fff !important;
+  overflow: hidden; /* remove QUALQUER barra de rolagem */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* garante altura total da tela */
+}
+
+/* ===== FAIXA ROXA DO TÍTULO ===== */
+.titulo-conteudo {
+  position: fixed;
+  top: 0;
+  left: 320px;
+  right: 0;
+  width: calc(100vw - 320px);
+  height: 90px;
+  background-color: #4b0082;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #360061;
+  z-index: 15;
+  box-sizing: border-box;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudo-principal {
+  margin-left: 320px;
+  margin-top: 90px;
+  background-color: #fff;
+  padding: 0 40px;
+  height: calc(100vh - 90px); /* ocupa tudo abaixo do título */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* impede rolagem */
+}
+
+/* ===== CARDS DE RESUMO ===== */
+.cards-resumo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;     /* 🔹 adiciona espaço abaixo do MENU PRINCIPAL */
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.card-resumo {
+  width: 180px;
+  height: 100px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.card-resumo:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 Cores correspondentes aos dados */
+.card-resumo.clientes { background-color: #6a0dad; }     /* Roxo */
+.card-resumo.produtos { background-color: #008000; }     /* Verde */
+.card-resumo.estoque { background-color: #800000; }      /* Marrom */
+.card-resumo.fornecedores { background-color: #ffa500; } /* Laranja */
+
+/* ===== GRÁFICO ===== */
+canvas {
+  width: 400px;
+  height: 400px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}

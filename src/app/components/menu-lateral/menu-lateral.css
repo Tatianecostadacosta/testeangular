@@ -12,17 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* Título do menu */
-.menu-lateral h3 {
-  font-size: 2rem; /* tamanho maior */
-  font-weight: 800; /* bem destacado */
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-  text-transform: uppercase; /* tudo em maiúsculo */
+  z-index: 1000; /* 🔥 mantém o menu acima de tudo */
 }
 
 /* Lista */
@@ -42,15 +32,23 @@
   color: #e0d7f8;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.2rem; /* aumentei a visibilidade */
+  font-size: 1.2rem;
   display: block;
   padding: 10px;
   border-radius: 6px;
   transition: 0.3s;
 }
 
-.menu-lateral a:hover {
-  background-color: #5e35b1; /* roxo médio */
+.menu-lateral a:hover,
+.menu-lateral a.ativo {
+  background-color: #5e35b1;
   color: #fff;
-  transform: scale(1.07);
+  transform: scale(1.05);
+}
+
+.menu-lateral a.ativo {
+  background-color: #6a4bc4;
+  color: #fff;
+  font-weight: 700;
+  transform: scale(1.05);
 }
